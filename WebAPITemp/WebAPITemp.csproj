@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <UserSecretsId>e8007195-f332-430f-8e1a-9fde97f327f5</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileTag>192.168.11.51:5000/WebAPITemp</DockerfileTag>
+    <!--DockerHub Url-->
+    <Configurations>Debug;Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Logs\**" />
+    <Compile Remove="Uploads\**" />
+    <Content Remove="Logs\**" />
+    <Content Remove="Uploads\**" />
+    <EmbeddedResource Remove="Logs\**" />
+    <EmbeddedResource Remove="Uploads\**" />
+    <None Remove="Logs\**" />
+    <None Remove="Uploads\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\DTOs\PageDTO.cs" />
+    <Compile Remove="Models\DTOs\UserDTO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.0" />
+    <PackageReference Include="LinqKit" Version="1.2.5" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.3.0" />
+    <PackageReference Include="Serilog.Exceptions" Version="8.4.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
+    <PackageReference Include="Serilog.Sinks.Elasticsearch" Version="9.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommomLibrary\CommomLibrary.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DBContexts\EFCore\Migrations\" />
+  </ItemGroup>
+</Project>

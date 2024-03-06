@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPITemp", "WebAPITemp\WebAPITemp.csproj", "{8DA1A7DF-6BAF-4018-8D40-8681EA356EFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommomLibrary", "CommomLibrary\CommomLibrary.csproj", "{56C59E98-B08F-4812-AEDA-C4398F43DD42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DA1A7DF-6BAF-4018-8D40-8681EA356EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA1A7DF-6BAF-4018-8D40-8681EA356EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA1A7DF-6BAF-4018-8D40-8681EA356EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA1A7DF-6BAF-4018-8D40-8681EA356EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C59E98-B08F-4812-AEDA-C4398F43DD42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C59E98-B08F-4812-AEDA-C4398F43DD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C59E98-B08F-4812-AEDA-C4398F43DD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C59E98-B08F-4812-AEDA-C4398F43DD42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CB578E2-E1CE-446E-A36A-506B8D1C43C7}
+	EndGlobalSection
+EndGlobal
